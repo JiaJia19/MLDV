@@ -57,7 +57,7 @@ def predict(features):
     prediction = model.predict(features)
     return prediction[0]
 
-st.write('Input Features')
+st.header('Input Features')
 st.write(input_features)
 
 if st.button ('Predict Breast Cancer'):
