@@ -28,13 +28,13 @@ with col1:
     perimeter = st.number_input('Perimeter', min_value=43.0, max_value=200.0, step=1.0)
     area = st.number_input('Area', min_value=143.0, max_value=2501.0, step=1.0)
 with col2:
-    smoothness = st.number_input('Smoothness', min_value=0.0, max_value=0.3, step=0.01)
-    compactness = st.number_input('Compactness', min_value=0.0, max_value=0.4, step=0.01)
-    concavity = st.number_input('Concavity', min_value=0.0, max_value=0.5, step=0.01)
+    smoothness = st.number_input('Smoothness', min_value=0.00000, max_value=0.300000, step=0.010000)
+    compactness = st.number_input('Compactness', min_value=0.000000, max_value=0.400000, step=0.010000)
+    concavity = st.number_input('Concavity', min_value=0.000000, max_value=0.500000, step=0.010000)
 with col3:
-    concave_points = st.number_input('Concave Points', min_value=0.0, max_value=0.3, step=0.01)
-    symmetry = st.number_input('Symmetry', min_value=0.0, max_value=0.4, step=0.01)
-    fractal_dimension = st.number_input('Fractal Dimension', min_value=0.0, max_value=0.1, step=0.01)
+    concave_points = st.number_input('Concave Points', min_value=0.000000, max_value=0.300000, step=0.010000)
+    symmetry = st.number_input('Symmetry', min_value=0.000000, max_value=0.400000, step=0.010000)
+    fractal_dimension = st.number_input('Fractal Dimension', min_value=0.000000, max_value=0.100000, step=0.010000)
     
     
 input_features = pd.DataFrame({
