@@ -62,4 +62,10 @@ st.write(input_features)
 
 if st.button ('Predict Breast Cancer'):
     prediction = predict(input_features)
-    st.write(prediction)
+    if prediction == "M":
+        st.header('You have Malignant Cancer')
+        st.write("A malignant tumor is cancerous. These tumors tend to grow rapidly, invade nearby tissues, and can spread to other parts of the body through the bloodstream or lymphatic system. This process of spreading is known as metastasis. Malignant tumors can be life-threatening and often require aggressive treatment, such as surgery, radiation, or chemotherapy.")
+        
+    else:
+        st.header('You have Benign Cancer')
+        st.write("A benign tumor is non-cancerous. These tumors usually grow slowly and do not invade nearby tissues or spread to other parts of the body. They are typically less dangerous than malignant tumors. However, depending on their size and location, benign tumors can still cause problems if they press against organs or structures. They are often removed surgically for this reason, but they usually do not recur after removal.")
